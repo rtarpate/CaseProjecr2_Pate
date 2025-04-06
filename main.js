@@ -10,3 +10,10 @@ audio.addEventListener('ended', function()
         audio.play();
     }
 })
+
+//adds alert code and listner for contact page
+const contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", function(event) 
+{
+    alert("message sent")
+})
