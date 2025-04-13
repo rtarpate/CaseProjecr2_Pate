@@ -6,6 +6,8 @@
 	<title>Blue Empire Bed and Breakfeast - Contact</title>
 	<meta charset="utf-8">
 	<link href="Styles/casita.css" rel="stylesheet">
+	<!--adds connection to javascript file-->
+	<script src="main.js" defer></script>
 </head>
 <body>
 	<!-- Wrapper -->
@@ -40,10 +42,10 @@
 			<!--changed contact us now to a button-->
 			<!--fields are requiered in order to submitte-->
 			<form method="post" id="contactForm" action="https://webdevbasics.net/scripts/javajam8.php">
-				<label for="FristName">FristName: </label>
-				<input type="text" id="FristName" name="FristName" required>
-				<label for="LastName">LastName: </label>
-				<input type="text" id="LastName" name="LastName" required>
+				<label for="firstName">FristName: </label>
+				<input type="text" id="firstName" name="firstName" required>
+				<label for="lastName">LastName: </label>
+				<input type="text" id="lastName" name="lastName" required>
 				<label for="myEmail">E-mail: </label>
 				<input type="email" id="myEmail" name="myEmail" required>
 				<label for="myStart">Date: </label>
@@ -57,17 +59,6 @@
 			Copyright &copy; 2024 WebMaster<br>
 		</footer>
 	</div>
-	<script>
-		//selecets the audio
-		const audio = document.getElementById('backgroundAudio');
-	  
-		//adds an listener for the audio
-		audio.addEventListener('ended', function()
-		{
-			 //replays the audio
-			 audio.currentTime = 0;
-			 audio.play();
-		});
-	  </script>
+	<!--removed redunte script code-->
 </body>
 </html>
