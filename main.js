@@ -27,6 +27,19 @@ if(contactForm)
         const lastName = formData.get("lastName");
         const email = formData.get("myEmail");
 
+        //epxerssoin to check for email
+        const Regexemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        //regex to check names 
+        const Regexname = /^[a-zA-Z]+$/;
+
+        //checks to see if email is valid
+        if(!Regexemail.test(email))
+        {
+            alert("invalid email enter a valid one");
+            return;
+        }
+
         //checks to see if userinput has gamil.com 
         const blockedDomain = "gmail.com";
         if(email.toLowerCase().includes(blockedDomain.toLowerCase()))
@@ -35,6 +48,22 @@ if(contactForm)
             return;
         }
 
+        //checks if frist name is valid
+        if(!Regexname.test(firstName))
+        {
+            alert("invalid first name");
+            return;
+        }
+
+        //checks if last name is valid
+        if(!Regexname.test(firstName))
+        {
+            alert("invalid last name");
+            return;
+        }
+
+        //redunet code commented out
+        /*
         //checks if input for firstname is valid
         if(!/^[a-zA-Z]+$/.test(firstName))
         {
@@ -47,6 +76,7 @@ if(contactForm)
            alert("invalid lasr name entry")
            return;
         }
+        */
 
         //alret if succeces
        // console.log("form data ", formData);

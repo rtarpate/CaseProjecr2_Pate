@@ -4,7 +4,9 @@
 <title>Blue Empire Bed and Breakfeast - Room</title>
 <meta charset="utf-8">
 <link href="../Styles/casita.css" rel="stylesheet">
-
+<!--links to both javascript file-->
+<script src="../objects.js" defer></script>
+<script src="../main.js" defer></script>
 </head>
 <body>
 <!-- wrapper -->
@@ -31,30 +33,26 @@
   <!-- main content -->
   <main>
   <h2>Rooms</h2>
-  	<table>
-		<tr>
-			<th>Regular</th>
-			<td>85USD per night: 1 king size bed and small bathroom and small room size</td>
-		</tr>
-		<tr>
-			<th>Deluxe</th>
-			<td>100USD per night: 2 king size bed with small bathroom and medium room size </td>
-		</tr>
-		<tr>
-			<th>Suite</th>
-			<td>125USD per night: 1 king size bed with master bathroom and medium room size</td>
-		</tr>
-		<tr>
-			<th>Master</th>
-			<td> 160USD per night 2 king size + 1 twin size bed with 2 master bathrooms and large room size</td>
-	</table>  
-	 <img src="../images/castle.jpg" alt="castle" width="450" height="200">
-
+  <!--comment code-->
+	<div id="roomList"></div>
+	<!--image to display on page-->
+	<img src="../images/castle.jpg" alt="castle" width="450" height="200">
   </main>
   <!-- footer -->
   <footer>
  Copyright &copy; 2024 WebMaster
   </footer>
 </div>
+<script>
+	//function to display the rooms
+	document.addEventListener('DOMContentLoaded', function() 
+	{
+      const roomListDiv = document.getElementById('roomList');//creates roomListDiv variable
+      roomListDiv.innerHTML += regularRoom.display() + '<br><br>';
+      roomListDiv.innerHTML += deluxeRoom.display() + '<br><br>';
+      roomListDiv.innerHTML += suiteRoom.display() + '<br><br>';           
+	  roomListDiv.innerHTML += masterRoom.display() + '<br><br>';
+    });
+</script>
 </body>
 </html>
