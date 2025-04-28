@@ -1,0 +1,124 @@
+/* creats style for the body of the html */
+body
+{
+    font-family: 'Arial', sans-serif; /*sets fount to arial*/
+    margin: 0; /*sets marign to 0*/
+    background-color: #0099ff; /*sets color to blue*/
+    color: #0099ff;
+    line-height: 1.6;/*sets line hiehg to 1.6*/
+}
+
+/*creates styles for wrapper*/
+#wrapper
+{
+    max-width: 960px;/*setrs width*/
+    margin: 20px auto;/*set margin*/
+    background-color: #ffffff;/*sets background color**/
+    box-shadow: 0 0 10px #000000;/*make color black*/
+    border-radius: 8px;/*makes radis 8*/
+    overflow: hidden;/*hides overflow*/
+
+}
+
+/*creates the stayles for the header*/
+header
+{
+    background-color: #0099ff;/*sets color to blue for background*/
+    color: #0099ff;
+    padding: 20px;/*make s padding 20px*/
+    text-align: center;/*puts text center*/
+    border-bottom: 1px solid #ff0000;/*makes border solid and red*/
+}
+
+/*creates the stayles for the header h1*/
+header h1
+{
+    margin: 0;/*makes margin 0*/
+    font: 2.5em;/*makes font 2.5*/
+    font-weight: bold;/*makes it bold*/
+}
+
+/*makes syles for navs */
+nav
+{
+    background-color: #000000;/*makes color black*/
+    padding: 10px;/*makes padding 10*/
+}
+nav ul
+{
+    list-style: none;/*no list style*/
+    padding: 0;/*sets padding to 0*/
+    margin: 0;/*makes margin 0*/
+    text-align: center;/*makes text centre*/
+}
+nav li
+{
+    display: inline-block;/*display the list set to inline block*/
+    margin: 0 15px;/*makes margin */
+}
+nav a
+{
+    color: #ffffff;/*makes color white*/
+    font-weight: bold;/*make sit bold*/
+    padding: 8px 12px;/*makes padding */
+}
+nav a:hover
+{
+    border-color: #c01111;/*sets color to red*/
+}
+
+/*creats styles for main page contects*/
+main
+{
+    padding: 20px;/*sets padding*/
+}
+main h2
+{
+    margin-bottom: 15px;/*sets bottom margin*/
+    border-bottom:  1px solid #c01111;/*sets border to red*/
+    padding-bottom: 10px;/*sets bottom padding*/
+}
+main p
+{
+    margin-bottom: 15px;/*sets margin bottom*/
+}
+main img
+{
+    max-width: 100%;/*sets width to 100%*/
+    height: auto;/*sets height*/
+    border-radius: 8px;/*sets radious to 8*/
+    display: block;/*sets display to block*/
+    margin: auto;/*sets margin to auto*/
+}
+
+/*createse stlyes for the footers */
+footer
+{
+    background-color: #000000;/*sets color to black*/
+    color: #000000;/*sets color to black*/
+    text-align: center;/*makes text center*/
+    padding: 10px; /*makes padding 10*/
+    font-size: 0.9em;/*sets font size*/
+}
+
+/*creates stlyes for the audio ui*/
+#audio-container
+{
+    position: fixed;/*makes postion fixed*/
+    width: 100%;/*makes width 100%*/
+    background-color: rgb(46, 49, 49);/*makes color a dark grey*/
+    padding: 10px;/*makes pading 10px*/
+}
+
+
+/*creates styles for the texts*/
+h1, h2, h3, p, label
+{
+    color: #ffd700;/*makes color gold*/
+}
+
+/*creates stlyes for the borders of images and the map*/
+#map, img
+{
+    border: 5px solid #000000;/*sets border to solid black line*/
+}

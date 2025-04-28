@@ -89,6 +89,27 @@ if(contactForm)
 })
 }
 
+//updates the price of updating rooms
+function updatePrice()
+{
+    //decalrs variables anf gets ids for rooms and night and total pirces
+    let roomType = document.getElementById('roomType').value;
+    let nights = document.getElementById('nights').value;
+    let totalPrice01 = document.getElementById('totalPrice');
+
+    //converts roomtype and nights 
+    let pricepernight = parseFloat(roomType);
+    let numberofnights = parseFloat(nights);
+
+    ////caluates total price
+    let totalPrice02 = pricepernight * numberofnights;
+    
+    //sets the total price eqaul to total price
+    totalPrice01.value = totalPrice02.toFixed(2);
+}
+
+
+
 
 //comments out redunednt code
 /*
