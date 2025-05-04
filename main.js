@@ -108,8 +108,38 @@ function updatePrice()
     totalPrice01.value = totalPrice02.toFixed(2);
 }
 
+//crates array of vlaid zip codes
+const validZipCobes = ["12345", "14789", "12369", "21478", "23698", "25864", "79106"];
 
+//adds function to check zip code
+function verifyZipCode(zipCode)
+{
+    return validZipCobes.includes(zipCode);//returns valid zip code
+}
 
+//event listenr for user input for the ezip code
+document.getElementById("ZipCode").addEventListener("input", function()
+{
+    let zipCode = this.value;//decvalers varibale for zip code from user input 
+    let errormessage = document.getElementById("zipcodeerrormessage")//decalres vairble for errormessage
+
+    //if statment to check if zip code is vlaid or invalid
+    if(zipCode.length == 5)
+    {
+        if(verifyZipCode(zipCode))
+        {
+            errormessage.textContent = "valid zip code";//outputs message if valid
+        }
+        else
+        {
+            errormessage.textContent = "invlaid zip code";//outputs message if invalid
+        }
+    }
+    else
+    {
+        errormessage.textContent = "";//empty string text 
+    }
+});
 
 //comments out redunednt code
 /*
