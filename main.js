@@ -89,20 +89,30 @@ if(contactForm)
 })
 }
 
-//updates the price of updating rooms
 
-//change function updatePrice into a jQueuery and 
-// add make it so the updating price fades out and fades back in and changes color depending on the price
 
-//updateprice jqeuery 
-document.querySelector("roomRentalForm").onchange
+
+
+//updateprice jqeuery version
+function updatePrice()
 {
-    let roomType = $("roomType").value;
-    let nights = $("nights").value;
-    let totalPrice01 = $("totalPrice").value;
+    //gets values
+    const roomType = $('#roomType').val();
+    const nights = $('#nights').val();
+    const totalPrice01 = $('#totalPrice');
 
-    
+    //coverts to numbers
+    const pricepernight = parseFloat(roomType);
+    const numberofnights = parseFloat(nights);
+
+    //calcualte total price
+    const totalPrice02 = pricepernight * numberofnights;
+
+    //total price set
+    totalPrice01.val(totalPrice02.toFixed(2));
 }
+
+
 
 /*
 
