@@ -90,6 +90,22 @@ if(contactForm)
 }
 
 //updates the price of updating rooms
+
+//change function updatePrice into a jQueuery and 
+// add make it so the updating price fades out and fades back in and changes color depending on the price
+
+//updateprice jqeuery 
+document.querySelector("roomRentalForm").onchange
+{
+    let roomType = $("roomType").value;
+    let nights = $("nights").value;
+    let totalPrice01 = $("totalPrice").value;
+
+    
+}
+
+/*
+
 function updatePrice()
 {
     //decalrs variables anf gets ids for rooms and night and total pirces
@@ -107,6 +123,10 @@ function updatePrice()
     //sets the total price eqaul to total price
     totalPrice01.value = totalPrice02.toFixed(2);
 }
+
+*/
+
+
 
 //crates array of vlaid zip codes
 const validZipCobes = ["12345", "14789", "12369", "21478", "23698", "25864", "79106"];
